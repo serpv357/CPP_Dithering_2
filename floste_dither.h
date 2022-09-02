@@ -46,7 +46,6 @@ cv::Mat getDitheredImageColor(cv::Mat originalImage, std::vector<cv::Vec3b> pale
                 __applyErrorColor(&originalImage, y + 1, x, &error, 5);
             if (!__outOfBounds(h, w, y + 1, x + 1))
                 __applyErrorColor(&originalImage, y + 1, x + 1, &error, 1);
-            std::cout << '\n';
         }
     }
 
